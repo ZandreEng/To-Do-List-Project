@@ -1,1 +1,50 @@
 /* Add application styles & imports to this file! */
+:root {
+  --dark-brown: #523131;
+  --brown: #835151;
+  --peach: #ffbcbc;
+  --pink: #f08fc0;
+  --darker-pink: #e771ab;
+  --cream: #ffeaca;
+  --white: #ffffff;
+
+  --normal-text: 16px;
+  --normal-text-extra: 22px;
+}
+
+body {
+  color: var(--brown);
+  font-size: var(--normal-text);
+}
+
+body,
+button {
+  background: var(--white);
+}
+
+input {
+  border: solid 2px var(--brown);
+  font-size: var(--normal-text-extra);
+  line-height: var(--normal-text-extra);
+  width: 50vw;
+  transition: box-shadow 0.15s linear;
+}
+
+input:focus {
+  border: solid 2px var(--brown);
+  outline: solid 1px var(--peach);
+  box-shadow: 4px 4px 0px 0px var(--brown), 8px 8px 0px 0px var(--peach),
+    12px 12px 0px 0px var(--cream);
+}
+
+button {
+  font-size: var(--normal-text-extra);
+  color: var(--brown);
+  border: 2px solid var(--brown);
+  transition: box-shadow 0.15s linear;
+}
+
+button:focus {
+  box-shadow: 4px 4px 0px 0px var(--brown), 8px 8px 0px 0px var(--peach),
+    12px 12px 0px 0px var(--cream);
+}

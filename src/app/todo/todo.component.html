@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+
+<section class="todo-form">
+  <input [(ngModel)]="todoItem" type="text" [placeholder]="todoItem" />
+  <button (click)="updateList()">Save</button>
+</section>
+
+<ul class="todo-list">
+  <li *ngFor="let item of todoItems">{{ item }}</li>
+</ul>
